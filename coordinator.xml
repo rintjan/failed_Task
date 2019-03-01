@@ -1,0 +1,13 @@
+<coordinator-app name="SHELL_C" frequency="*/5 * * * *" start="${start_date}" end="${end_date}" timezone="UTC" xmlns="uri:oozie:coordinator:0.2">
+  <action>
+    <workflow>
+      <app-path>hdfs://quickstart.cloudera:8020/user/cloudera/oozie_workflow/oozie_task/coordinator_1/workflow/workflow.xml</app-path>
+      <configuration>
+        <property>
+          <name>oozie.use.system.libpath</name>
+          <value>True</value>
+        </property>
+      </configuration>
+   </workflow>
+  </action>
+</coordinator-app>
